@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 45-->
+
+<head>
+    <title>Practica 45</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        var vector1 = [];
+        var f;
+        for (f = 0; f <= 10; f++) {
+            vector1[f] = parseInt(1 + (Math.random() * 500));
+        }
+        var vector2 = [];
+        var vector3 = [];
+        var pim = 0;
+        var pom = 0;
+        for (f = 0; f < vector1.length; f++) {
+            if (vector1[f] < 250) {
+                vector2[pim] = vector1[f];
+                pim++;
+            } else {
+                vector3[pom] = vector1[f];
+                pom++;
+            }
+        }
+        document.write('Estos son los tamaños de los vectores:');
+        document.write('<br>');
+        document.write('Este es el tamaño del primer vector:');
+        document.write('<br>');
+        document.write(vector1.length);
+        document.write('<br>');
+        document.write('Este es el tamaño del segundo vector:');
+        document.write('<br>');
+        document.write(vector2.length);
+        document.write('<br>');
+        document.write('Este es el tamaño del tercer vector:');
+        document.write('<br>');
+        document.write(vector3.length);
+        for (f = 0; f < vector1.length; f++) {
+            document.write(vector1[f] + '-');
+        }
+        document.write('<br>');
+        document.write('Estos son los elementos del segundo vector:');
+        for (f = 0; f < vector2.length; f++) {
+            document.write('<br>');
+            document.write(vector2[f]);
+        }
+        document.write('<br>');
+        document.write('Estos son los elementos del tercer vector:');
+        for (f = 0; f < vector3.length; f++) {
+            document.write('<br>');
+            document.write(vector3[f]);
+        }
+    </script>
+
+</body>
+
+</html>
